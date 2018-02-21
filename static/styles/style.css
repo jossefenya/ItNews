@@ -1,0 +1,85 @@
+ * {
+	background-color: #f0f8ff;
+ }
+
+.it {
+	font-family: Impact;
+	margin-top: 50px;
+	margin-left: 200px;
+	font-size: 30px;
+	float: left;
+}
+
+.header {
+	width: 100%;
+	padding-bottom: 10px;
+	float: left;
+}
+
+.search {
+	float: right;
+	margin-top: 60px;
+	margin-right: 200px;
+}
+
+.navbar {
+	float: left;
+	background-color: #F8F8FF;
+	width: 100%;
+	height: 50px;
+	border: 1px groove black;
+	border-radius: 10px;
+}
+
+button {
+	background-color: #F8F8FF;
+	border: 0px none;
+	border-radius: 1px;
+}
+
+a {
+	font-family: Impact;
+	background-color: #F8F8FF;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.botton1 {
+	margin-left: 55px;
+	margin-top: 15px;
+}
+
+.botton2 {
+	margin-left: 37px;
+	margin-top: 15px;
+}
+
+.botton3 {
+	margin-left: 37px;
+	margin-top: 15px;
+}
+
+.botton4 {
+	margin-left: 37px;
+	margin-top: 15px;
+}
+
+.botton5 {
+	margin-left: 37px;
+	margin-top: 15px;
+}
+
+.botton6 {
+	margin-left: 37px;
+	margin-top: 15px;
+}
+
+.news {
+	float: left;
+	background-color: #FAEBD7;
+}
+
+ #train {
+    position: relative;
+    cursor: pointer;
+}
