@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>IT_News</title>
+	<title>
+		IT_News
+		{% block title %}
+        {% endblock %}
+	</title>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 <body>
 	<div class="header" id="it">
-		<a style="color: black;" href="index.html"><i>IT_News</i></a>
+		<a style="color: black;" href="{{ url_for('index') }}"><i>IT_News</i></a>
 	</div>
 	<div class="header" id="search">
 		<form name="Test" action="" method="post" class="search">
@@ -15,13 +19,15 @@
 		</form>
 	</div>
 	<div class="navbar">
-		<a href="#" class="a1">Страница 1</a>
-		<a href="#" class="a2">Страница 2</a>
-		<a href="#" class="a3">Страница 3</a>
-		<a href="#" class="a4">Страница 4</a>
-		<a href="#" class="a5">Страница 5</a>
-		<a href="#" class="a6">Страница 6</a>
+		<a href="{{ url_for('page1') }}" class="a1">Страница 1</a>
+		<a href="{{ url_for('page2') }}" class="a2">Страница 2</a>
+		<a href="{{ url_for('page3') }}" class="a3">Страница 3</a>
+		<a href="{{ url_for('page4') }}" class="a4">Страница 4</a>
+		<a href="{{ url_for('page5') }}" class="a5">Страница 5</a>
+		<a href="{{ url_for('page6') }}" class="a6">Страница 6</a>
 	</div>
+	{% block content_title %}
+	{% endblock %}
 	<div class="news">
 		{% block content %}
 		{% endblock %}
