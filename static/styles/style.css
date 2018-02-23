@@ -1,85 +1,90 @@
  * {
 	background-color: #f0f8ff;
- }
-
-.it {
-	font-family: Impact;
-	margin-top: 50px;
-	margin-left: 200px;
-	font-size: 30px;
-	float: left;
 }
 
 .header {
-	width: 100%;
-	padding-bottom: 10px;
-	float: left;
+	display: inline-block;
 }
 
-.search {
+.header#search {
 	float: right;
+	margin-right: 150px;
 	margin-top: 60px;
-	margin-right: 200px;
 }
 
-.navbar {
-	float: left;
-	background-color: #F8F8FF;
-	width: 100%;
-	height: 50px;
-	border: 1px groove black;
-	border-radius: 10px;
-}
-
-button {
-	background-color: #F8F8FF;
-	border: 0px none;
-	border-radius: 1px;
+.header#it{
+	font-family: Impact;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-left: 200px;
 }
 
 a {
-	font-family: Impact;
-	background-color: #F8F8FF;
 	text-decoration: none;
+}
+
+.navbar {
+	background-color: #f8f8f8;
+	height: 35px;
+	border: 1px groove pink;
+	border-radius: 10px;
+	padding-top: 15px;
+}
+
+.a1 {
+	float: left;
+	font-family: Impact;
 	font-size: 15px;
+	margin-left: 25px;
+	background-color: #f8f8f8;
+	width: 17%;
 }
 
-.botton1 {
-	margin-left: 55px;
-	margin-top: 15px;
+.a2 {
+	font-family: Impact;
+	font-size: 15px;
+	background-color: #f8f8f8;
+	float: left;
+	width: 17%;
 }
 
-.botton2 {
-	margin-left: 37px;
-	margin-top: 15px;
+.a3 {
+	font-family: Impact;
+	font-size: 15px;
+	background-color: #f8f8f8;
+	float: left;
+	width: 17%;
 }
 
-.botton3 {
-	margin-left: 37px;
-	margin-top: 15px;
+.a4 {
+	font-family: Impact;
+	font-size: 15px;
+	background-color: #f8f8f8;
+	float: left;
+	width: 17%;
 }
 
-.botton4 {
-	margin-left: 37px;
-	margin-top: 15px;
+.a5 {
+	font-family: Impact;
+	font-size: 15px;
+	background-color: #f8f8f8;
+	float: left;
+	width: 16%;
 }
 
-.botton5 {
-	margin-left: 37px;
-	margin-top: 15px;
-}
-
-.botton6 {
-	margin-left: 37px;
-	margin-top: 15px;
+.a6 {
+	font-family: Impact;
+	font-size: 15px;
+	background-color: #f8f8f8;
+	float: left;
 }
 
 .news {
-	float: left;
-	background-color: #FAEBD7;
-}
-
- #train {
-    position: relative;
-    cursor: pointer;
+	border: 1px groove pink;
+	border-top: none;
+	width: 73%;
+	margin-left: 130px;
+	margin-right: 100px;
+	height: 800px;
+	background-color: #f8f8f8;
 }

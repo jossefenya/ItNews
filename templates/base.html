@@ -6,19 +6,25 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 <body>
-	<div class="header">
-		<p class="it"><i>IT_News</i></p>
+	<div class="header" id="it">
+		<a style="color: black;" href="index.html"><i>IT_News</i></a>
+	</div>
+	<div class="header" id="search">
 		<form name="Test" action="" method="post" class="search">
 			<label for="search"></label><input type="text" placeholder="Search..." name="search" id="search" maxlength="255" />
 		</form>
 	</div>
 	<div class="navbar">
-		<button class="botton1"><a href="#">Страница 1</a></button>
-		<button class="botton2"><a href="#">Страница 2</a></button>
-		<button class="botton3"><a href="#">Страница 3</a></button>
-		<button class="botton4"><a href="#">Страница 4</a></button>
-		<button class="botton5"><a href="#">Страница 5</a></button>
-		<button class="botton6"><a href="#">Страница 6</a></button>
+		<a href="#" class="a1">Страница 1</a>
+		<a href="#" class="a2">Страница 2</a>
+		<a href="#" class="a3">Страница 3</a>
+		<a href="#" class="a4">Страница 4</a>
+		<a href="#" class="a5">Страница 5</a>
+		<a href="#" class="a6">Страница 6</a>
+	</div>
+	<div class="news">
+		{% block content %}
+		{% endblock %}
 	</div>
 </body>
 </html>
