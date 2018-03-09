@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-		IT_News
-		{% block title %}
+        IT_News
+        {% block title %}
         {% endblock %}
-	</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    </title>
+	<link rel="stylesheet" href="../static/styles/style.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="header" id="it">
-		<a style="color: black;" href="{{ url_for('posts.index') }}"><i>IT_News</i></a>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">IT news</a>
+			</div>
+			<div class="navbar-menu">
+				<ul class="hr">
+					<li class="active">
+						<a href="{{ url_for('page1') }}">Домой   <i class="fa fa-home" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href="{{ url_for('page2') }}">Page2</a>
+					</li>
+					<li>
+						<a href="{{ url_for('page3') }}">Page3</a>
+					</li>
+					<li>
+						<a href="{{ url_for('page4') }}">Page4</a>
+					</li>
+					<li>
+						<a href="{{ url_for('page5') }}">Page5</a>
+					</li>
+					<li>
+						<a href="{{ url_for('page6') }}">Про нас</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	<div class="header" id="search">
-		<form name="Test" action="" method="post" class="search">
-			<label for="search"></label><input type="text" placeholder="Search..." name="search" id="search" maxlength="255" />
-		</form>
+    {% block content_title %}
+    {% endblock %}
+
+<div id="headerback">
+{% block content %}
+{% endblock %}
 	</div>
-	<div class="navbar">
-		<a href="{{ url_for('page1') }}" class="a1">Страница 1</a>
-		<a href="{{ url_for('page2') }}" class="a2">Страница 2</a>
-		<a href="{{ url_for('page3') }}" class="a3">Страница 3</a>
-		<a href="{{ url_for('page4') }}" class="a4">Страница 4</a>
-		<a href="{{ url_for('page5') }}" class="a5">Страница 5</a>
-		<a href="{{ url_for('page6') }}" class="a6">Страница 6</a>
-	</div>
-	{% block content_title %}
-	{% endblock %}
-	<div class="news">
-		{% block content %}
-		{% endblock %}
-	</div>
+
 </body>
 </html>

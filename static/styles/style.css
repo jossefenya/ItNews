@@ -1,90 +1,138 @@
- * {
-	background-color: #f0f8ff;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway|Raleway+Dots');
 
-.header {
-	display: inline-block;
-}
+body {
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #eeeeee;
 
-.header#search {
-	float: right;
-	margin-right: 150px;
-	margin-top: 60px;
-}
-
-.header#it{
-	font-family: Impact;
-	font-size: 30px;
-	margin-top: 50px;
-	margin-left: 200px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
 }
 
 a {
 	text-decoration: none;
+	color:#ffffff;
 }
+a:hover, a:focus {
+	text-decoration: none;
+	color:#70bcb9;
+}
+
+
+h1 {
+	font-family: "Raleway";
+	text-shadow: #f0d5ce 5px 0 0, #fff 9px 0 0;
+	color: #70bcb9;
+	font-size: 120px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+}
+h2 {
+	font-family: "Raleway";
+	color: #fff;
+	font-size: 30px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
 
 .navbar {
-	background-color: #f8f8f8;
-	height: 35px;
-	border: 1px groove pink;
-	border-radius: 10px;
-	padding-top: 15px;
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin:0;
+}
+.navbar-header{
+	margin: 0;
+	padding: 6px;
+	display: inline-block;
+	width:60%;
 }
 
-.a1 {
-	float: left;
-	font-family: Impact;
-	font-size: 15px;
-	margin-left: 25px;
-	background-color: #f8f8f8;
-	width: 17%;
+.navbar-inverse {
+	background:#2d2d2d;
+	border-color: #2d2d2d;
+}
+.navbar-menu{
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
 }
 
-.a2 {
-	font-family: Impact;
-	font-size: 15px;
-	background-color: #f8f8f8;
-	float: left;
-	width: 17%;
+.navbar-brand{
+	font-family: Raleway, sans-serif;
+	font-weight: 900;
+	display: inline-block;
+	text-align: right;
+	font-size: 30px;
+	margin: 0;
+	padding: 4px 4px 4px 30px;
 }
 
-.a3 {
-	font-family: Impact;
-	font-size: 15px;
-	background-color: #f8f8f8;
-	float: left;
-	width: 17%;
+ ul.hr {
+ 	text-align: right;
+    margin: 0;
+    padding: 4px;
+
+   }
+   ul.hr li {
+   	text-align: right;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+   }
+
+.active{
+   	background-color: #70bcb9;
+   	margin-right: 5px;
+    border-radius: 15px;
+   }
+.active:hover, .active:focus{
+	background-color: #fff;
+}
+.active:hover > a, .active:focus > a{
+	text-decoration: none;
+	color:#70bcb9;
 }
 
-.a4 {
-	font-family: Impact;
-	font-size: 15px;
-	background-color: #f8f8f8;
-	float: left;
-	width: 17%;
+ .container{
+  	white-space: nowrap;
+  }
+
+.right {
+    margin: 0 0 0 auto;
+}
+ #headerback {
+ 	background: url(../img/backgrr.jpg) no-repeat center top;
+ 	width: 100%;
+ 	margin:0;
+ 	padding: 0;
+ 	background-attachment: relative;
+ 	background-position: center center;
+ 	min-height: 1666px;
+ 	background-size: cover;
+ 	text-align: center;
+ 	font-weight: 800;
+	font-size: 14px;
+	margin:0;
 }
 
-.a5 {
-	font-family: Impact;
-	font-size: 15px;
-	background-color: #f8f8f8;
-	float: left;
-	width: 16%;
+.blurback {
+	background-color: rgba(0,0,0,.5);
+    backdrop-filter: grayscale(10) contrast(10) blur(1px)
+    margin: 300px;
+    min-height: 500px;
 }
-
-.a6 {
-	font-family: Impact;
-	font-size: 15px;
-	background-color: #f8f8f8;
-	float: left;
+.container>hr{
+	width: 70%;
 }
-
-.news {
-	border: 1px groove pink;
-	border-top: none;
-	width: 73%;
-	margin-left: 130px;
-	margin-right: 100px;
-	height: 800px;
-	background-color: #f8f8f8;
+.bot {
+	text-align: right;
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    margin: 0;
 }
