@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content_title %}
+
+{% endblock %}
+
+{% block content %}
+
+    {% for post in posts %}
+
+        {{ post.title }}
+
+    {% endfor %}
+
+{% endblock %}
