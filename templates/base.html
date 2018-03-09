@@ -8,19 +8,19 @@
         {% block title %}
         {% endblock %}
     </title>
-	<link rel="stylesheet" href="../static/styles/style.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" type="text/css" charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">IT news</a>
+				<a class="navbar-brand" href="{{url_for('page1')}}">IT news</a>
 			</div>
 			<div class="navbar-menu">
 				<ul class="hr">
 					<li class="active">
-						<a href="{{ url_for('page1') }}">Домой   <i class="fa fa-home" aria-hidden="true"></i></a>
+						<a href="{{ url_for('posts.index') }}">Домой   <i class="fa fa-home" aria-hidden="true"></i></a>
 					</li>
 					<li>
 						<a href="{{ url_for('page2') }}">Page2</a>
