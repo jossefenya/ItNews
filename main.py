@@ -3,6 +3,8 @@ import view
 from app import db
 from posts.blueprint import posts
 
+
+
 app.register_blueprint(posts, url_prefix='/news')
 
 if __name__ == '__main__':

@@ -11,9 +11,8 @@
 {% block content %}
 
     {% for post in posts %}
-
-        {{ post.title }} <br />
-
+<p style="font-size: 20px"><a href="{{ url_for('posts.news_detail', slug=post.slug) }}" style="color: sienna">{{ post.title }}</a></p><br />
+        {{ post.body }}
     {% endfor %}
 
 {% endblock %}
